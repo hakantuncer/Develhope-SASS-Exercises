@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  border: 1px solid red;
+  margin: 30px auto;
+  width: 80%;
+}
+.main h1 {
+  position: relative;
+  text-align: center;
+  padding-top: 30px;
+  color: green;
+  width: 100%;
+}
+.main h1::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 50%;
+  height: 2px;
+  background-color: blue;
+}
+.main section {
+  display: flex;
+  padding: 10px;
+}
+.main section article {
+  border: 1px solid green;
+  padding: 15px 10px;
+  text-align: center;
+  font-size: 16px;
+  color: blue;
+}
+.main section article:nth-child(odd) {
+  color: red;
+}
+.main section article:not(:last-child) {
+  border-right: none;
+}
+
+/*# sourceMappingURL=style.css.map */
